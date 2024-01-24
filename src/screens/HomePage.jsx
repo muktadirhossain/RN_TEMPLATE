@@ -1,15 +1,13 @@
-import { StyleSheet, Text, View , useColorScheme} from 'react-native'
-import React from 'react'
+import {Text, View, useColorScheme} from 'react-native';
 
 const HomePage = () => {
-    const isDarkMode = useColorScheme() === 'dark' ;
+  const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View className={`${isDarkMode ? "bg-slate-900": "bg-gray-300"} min-h-screen`}>
-      <Text>HomePage</Text>
+    <View
+      className={`${isDarkMode ? 'bg-slate-900' : 'bg-gray-300'} min-h-screen`}>
+      <Text className="text-center my-5">Welcome</Text>
     </View>
-  )
-}
+  );
+};
 
-export default HomePage
-
-const styles = StyleSheet.create({})
+export default HomePage;
